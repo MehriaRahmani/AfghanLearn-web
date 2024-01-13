@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfghanLearn</title>
+  <style>
+  
+
+    div{
+   box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    border-radius: 10px;
+    color: #fff;
+    max-width: 50%;
+    padding: 30px;
+    margin: 30px auto;
+    font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+}
+    
+
+h1{
+  text-align: center;
+color: #FFFFFF;
+border:1px solid #FFFFFF;
+font-size: 40px;
+line-height: 30px;
+padding: 30px;
+}
+h2{
+  text-align: center;
+color: #FFFFFF;
+border-bottom:1px solid #FFFFFF;
+font-size: 35px;
+line-height: px;
+padding: 20px;
+font-weight: 550;
+
+}
+
+img{
+  display:block;
+  margin: 0 auto;
+  max-width: 68%;
+border: none;
+box-shadow: 4px 2px 4px 3px rgb(31, 206, 206);
+  border-radius:5px;
+}
+p{
+  border-top: 1px solid white;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 30px;
+}
+.anchor-link{
+  color:#ea1a97;
+  font-size:17px;
+ }
+button{
+  display:block;
+  margin: 0 auto 15px auto;
+  text-align: center;
+  background:#2d1904;
+  width:70%;
+  padding: 18px;
+  color:rgb(255, 252, 252);
+  line-height:30px;  
+  font-weight: 500;  
+  font-size: 35px;       
+  border-radius: 7px; 
+  font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;   
+  cursor: pointer;
+  box-shadow:4px 4px 4px 4px rgba(17, 150, 227, 0.08);
+  transition:all 200ms ease-in-out;
+  opacity: .8;
+  border: none;
+}
+button:hover{
+background: rgb(95, 82, 82);
+}
+@media screen and (max-width: 600px) {
+  h1{
+    margin-top: 0;
+font-size: 20px;
+padding: 13px;
+}
+h2{
+font-size: 13px;
+padding: 10px;
+font-weight: 500;
+
+}
+p{
+  font-size: 10px;
+  padding: 7px 0 7px 0;
+}
+button{
+  width:90%;
+  padding: 10px;
+  font-size: 16px;      
+  margin-bottom: 0;
+}
+}
+  </style>
+</head>   
+<body>
+  <div class="container">
+  <h1>
+    AfghanLearn
+  </h1>
+  <h2>
+    Education for everyone
+  </h2>
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/741/original/afg.jpg?1699785733" alt="online study image">
+   <p>
+    Welcome to <strong>AfghanLearn</strong>, your gateway to a world of free and high-quality learning resources! At <strong>AfghanLearn</strong>, we are dedicated to democratizing education by offering a comprehensive range of study materials. Whether you are delving into the realms of coding, cybersecurity, IT courses, or beyond, our platform is designed to empower learners at every level. We believe that education should be accessible to all, and that's why we're committed to providing a diverse array of resources
+    <br/>
+    <a href="we will provide the link" target="_blank" class="anchor-link">Read more</a>
+   </p>
+   <button>Join AfghanLearn</button>
+   </div>
+
+   <script>
+    function welcomeMessage(){
+      let name = prompt('What is your name?');
+      if (name.length >1){
+      alert ('Thanks, ' + name + ' , we will be in touch. Menwhile, have a happy study!' )
+      }else{
+        alert("No name , No admission!")
+      }
+    }
+    let btn = document.querySelector('button');
+    btn.addEventListener('click',welcomeMessage);
+   </script>
+</body>
+</html>
